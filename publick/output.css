@@ -611,7 +611,7 @@ video {
 
 /* Add your custom styles here */
 
-#section-btn{
+main > button{
   background-color: skyblue ;
   font-weight: 700;
   padding: 2rem 4rem;
