@@ -26,11 +26,10 @@
                         ">
 
             <h1 class="text-center 
-                        text-3xl 
                         text-gray-100
                         font-bold
                         border 
-                        p-8
+                        p-4
                         mt-0
                         rounded-xl">
                         تسجيل الدخول إلى النظام
@@ -38,34 +37,42 @@
 
             <form action="#" class="text-gray-100 text-3xl ">
                 <fieldset class="rounded  
-                                pb-2">
+                                flex
+                                flex-col
+                                gap-4
+                                justify-center
+                                items-center
+                                ">
                     
-                    <div class="py-4 overflow-hidden flex flex-col-reverse">
+                    <div class="overflow-hidden mt-2 flex flex-col-reverse">
                         <input type="text" 
                                 name="data[name]" 
                                 id="name" 
                                 class="rounded w-full
                                     text-gray-900 
                                         outline-none
-                                        pl-2 py-2 
+                                        pl-1 py-1 
                                         font-medium" 
                                 placeholder="أدخل الإسم" 
                                 required>
-                        <label for="name">: الإسم</label>
+                        <!-- <label for="name">: الإسم</label> -->
                     </div>
 
                     
                     <div class="py-4 ">
-                        <select name="lavel" id="lavel" class="rounded text-gray-900 py-2 font-medium outline-none">
+                        <select name="lavel" id="lavel" class="rounded 
+                                                            text-gray-900 
+                                                            py-2 font-medium 
+                                                            outline-none">
                             <option value="1">المستوى الأول</option>
                             <option value="2">المستوى الثاني</option>
                             <option value="3">المستوى الثالث</option>
                             <option value="4">المستوى الرابع</option>
                         </select>
-                        <label for="lavel">: المستوى</label>
+                        <!-- <label for="lavel">: المستوى</label> -->
                     </div>
 
-                    <div class="mt-4 flex justify-center">
+                    <div class="mt-2 flex justify-center">
                         <button class="bg-sky-400 
                                     text-black 
                                     hover:bg-sky-300 
