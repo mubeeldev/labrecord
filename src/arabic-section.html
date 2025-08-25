@@ -6,21 +6,22 @@
     <title>Arabic collage</title>
     <link rel="stylesheet" href="../publick/output.css">
 </head>
-<body class="bg-gray-800 text-gray-900 p-4">
+<body class="bg-gray-800 text-gray-900 p-4 h-screen w-full">
     <header class="flex items-center justify-center" >
         <div class="w-[200px] flex gap-8 justify-center items-center p-10">
             <img width="200" height="100" src="https://www.qu.edu.sa/wp-content/uploads/2025/02/qu-white-logo.svg" class="attachment-full size-full wp-image-72 entered lazyloaded" alt="The logo of Qassim University includes text in both Arabic and English, where the name of the university appears in Arabic &quot;Qassim University&quot; and in English &quot;Qassim University&quot;, and the text is topped with a distinctive design." data-lazy-src="https://www.qu.edu.sa/wp-content/uploads/2025/02/qu-white-logo.svg" data-ll-status="loaded">
             <img width="50" height="123" src="https://www.qu.edu.sa/wp-content/uploads/2025/03/2030_vision_white.svg" class="attachment-full size-full wp-image-450 entered lazyloaded" alt="The Saudi Arabia 2030 Vision Assistance Logo includes the number &quot;2030&quot;, the palm tree and crossed swords symbol, text in Arabic, and the words &quot;Saudi Arabia&quot; in both Arabic and English. The logo may also feature national identity symbols, such as the Saudi shemagh or the Saudi ghutra." data-lazy-src="https://www.qu.edu.sa/wp-content/uploads/2025/03/2030_vision_white.svg" data-ll-status="loaded">
         </div>
     </header>
-    <main class="flex px-8" >
+    <main class="flex px-4" >
 
         <section class="w-1/3 flex 
                         flex-col 
                         justify-center 
                         items-center border 
                         py-8 px-2 rounded-xl
-                        bg-sky-800 border-blue-200">
+                        h-2/3
+                        border-blue-200">
 
             <form action="#" class="text-gray-100 text-3xl ">
                 <fieldset class="rounded border-blue-200 pb-2">
@@ -31,11 +32,8 @@
                         <label for="name">: الإسم</label>
                     </div>
 
-                    <div class="mt-4 inline">
-                        <button class="bg-sky-400 text-black hover:bg-sky-300 py-2 px-4 rounded-lg">ٍإرسال</button>
-                    </div>
-
-                    <div class="py-4 inline-block">
+                    
+                    <div class="py-4 ">
                         <select name="lavel" id="lavel" class="rounded text-gray-900 py-2 font-medium outline-none">
                             <option value="1">المستوى الأول</option>
                             <option value="2">المستوى الثاني</option>
@@ -43,6 +41,16 @@
                             <option value="4">المستوى الرابع</option>
                         </select>
                         <label for="lavel">: المستوى</label>
+                    </div>
+
+                    <div class="mt-4 flex justify-center">
+                        <button class="bg-sky-400 
+                                    text-black 
+                                    hover:bg-sky-300 
+                                    py-2 px-4 
+                                    rounded-lg">ٍ
+                                    إرسال
+                                </button>
                     </div>
                 </fieldset>
             </form>
@@ -53,7 +61,15 @@
         </section>
 
         <section class="h-2/3 text-gray-100 w-2/3 px-8">
-            <h1 class="text-center text-4xl border p-8 border-blue-200 rounded-xl ">تسجيل الخروج  من النطام</h1>
+            <h1 class="text-center 
+                        text-3xl 
+                        font-bold
+                        border 
+                        p-8
+                        rounded-xl ">
+                        تسجيل الخروج  من النطام
+            </h1>
+
             <div class="grid grid-cols-5 
                         gap-4 
                         text-center 
