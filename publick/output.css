@@ -640,6 +640,18 @@ video {
   height: 20%;
 }
 
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[30\%\] {
+  height: 30%;
+}
+
+.h-\[35\%\] {
+  height: 35%;
+}
+
 .max-h-max {
   max-height: -moz-max-content;
   max-height: max-content;
