@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 /* Add your custom styles here */
+
+#section-btn{
+    background-color: skyblue ;
+    font-weight: 700;
+    padding: 2rem 4rem;
+    font-size: 5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 500px;
+    &:hover{
+        background-color: lightblue;
+
+    }
+    &:active{
+        background-color: navy;
+    }
+}
