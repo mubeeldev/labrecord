@@ -652,6 +652,10 @@ video {
   height: 35%;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-max {
   max-height: -moz-max-content;
   max-height: max-content;
