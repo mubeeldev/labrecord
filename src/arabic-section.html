@@ -41,7 +41,8 @@
             </h1>
 
             <form action="#" class="text-gray-100 ">
-                <fieldset class="rounded  
+                <fieldset class=" form-set1
+                                rounded  
                                 flex
                                 flex-col
                                 gap-4
@@ -59,7 +60,7 @@
                                         pl-1 py-1 
                                         font-medium" 
                                 placeholder="أدخل الإسم" 
-                                required>
+                                >
                         <!-- <label for="name">: الإسم</label> -->
                     </div>
 
@@ -79,6 +80,7 @@
 
                     <div class="mt-2 flex justify-center">
                         <button class="bg-sky-400 
+                                    submitBtn1
                                     text-black 
                                     hover:bg-sky-300 
                                     py-2 px-4 
@@ -88,6 +90,33 @@
                                 </button>
                     </div>
                 </fieldset>
+                
+                <fieldset class="form-set2
+                                rounded  
+                                flex-col
+                                gap-4
+                                justify-center
+                                hidden
+                                items-center">
+                    <div>
+                        <textarea name="do" id="do-coment" class="
+                                                                text-black
+                                                                outline-none
+                        "></textarea>
+                    </div>
+                    <div class="mt-2 flex justify-center">
+                        <button class="bg-sky-400 
+                                    submitBtn2
+                                    text-black 
+                                    hover:bg-sky-300 
+                                    py-2 px-4 
+                                    rounded-lg
+                                    ">
+                                    إرسال
+                                </button>
+                    </div>
+                </fieldset>
+            
             </form>
 
             <!-- <div class="mt-8">
@@ -110,11 +139,11 @@
                         font-bold 
                         mt-2 border-b-2
                         py-4">
-                <span>وقت الدخول</span>
-                <span>وقت الخروج</span>
-                <span>ما فعل</span>
-                <span>الإسم</span>
-                <span>اليوم</span>
+                <span  >ما فعل</span>
+                <span  >وقت الخروج</span>
+                <span  >وقت الدخول</span>
+                <span  >الإسم</span>
+                <span  >اليوم</span>
                 
 
             </div>
@@ -129,21 +158,28 @@
                         rounded-lg 
                         ">
 
-                <div class="grid grid-cols-5 gap-4  
+                <div class="
+                            student-record
+                            grid grid-cols-5 gap-4  
                             hover:bg-slate-400 
                             hover:text-black 
                             text-center 
                             w-full border-b 
                             border-blue-200 py-2">
+                    <p>قام بتسجيل الدخول</p>
                     <p>13:00</p>
                     <p>9:30</p>
-                    <p>قام بتسجيل الدخول</p>
                     <p>محمد أحمد</p>
-                    <p>2024-06-15</p>
+                    <p  >2024-06-15</p>
 
-                    <div class="col-span-5 hidden justify-center gap-4 mt-4">
-                        <button class="bg-sky-400 hover:bg-sky-200 text-black py-2 px-4 rounded-md">خروج</button>
-                        <button class="bg-red-500 hover:bg-red-300  py4 px8 rounded-md py-2 px-4">إمساح</button>
+                    <div class="
+                                ending-btn
+                                col-span-5
+                                hidden 
+                                justify-center 
+                                gap-4 mt-4">
+                        <button class="exist-btn bg-sky-400 hover:bg-sky-200 text-black py-2 px-4 rounded-md">خروج</button>
+                        <button class="delete-btn bg-red-500 hover:bg-red-300  py4 px8 rounded-md py-2 px-4">إمساح</button>
                     </div>
                 </div>
 
