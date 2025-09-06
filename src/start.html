@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>starting</title>
-    <link rel="stylesheet" href="../public/output.css">
-</head>
-<body class="bg-gray-800 text-gray-900 p-4 overflow-hidden">
-
-    <main class="flex flex-col items-center  min-h-screen gap-0">
+    <link rel="stylesheet" href="../public/output.css" />
+  </head>
+    <body class="bg-gray-800 text-gray-900 p-4 overflow-hidden">
+        <main class="flex flex-col items-center min-h-screen gap-0">
         <div class="w-[200px] flex gap-8 justify-center items-center p-10">
-            <img width="200" height="100" src="https://www.qu.edu.sa/wp-content/uploads/2025/02/qu-white-logo.svg" class="attachment-full size-full wp-image-72 entered lazyloaded" alt="The logo of Qassim University includes text in both Arabic and English, where the name of the university appears in Arabic &quot;Qassim University&quot; and in English &quot;Qassim University&quot;, and the text is topped with a distinctive design." data-lazy-src="https://www.qu.edu.sa/wp-content/uploads/2025/02/qu-white-logo.svg" data-ll-status="loaded">
-            <img width="50" height="123" src="https://www.qu.edu.sa/wp-content/uploads/2025/03/2030_vision_white.svg" class="attachment-full size-full wp-image-450 entered lazyloaded" alt="The Saudi Arabia 2030 Vision Assistance Logo includes the number &quot;2030&quot;, the palm tree and crossed swords symbol, text in Arabic, and the words &quot;Saudi Arabia&quot; in both Arabic and English. The logo may also feature national identity symbols, such as the Saudi shemagh or the Saudi ghutra." data-lazy-src="https://www.qu.edu.sa/wp-content/uploads/2025/03/2030_vision_white.svg" data-ll-status="loaded">
+            <img
+            width="200"
+            height="100"
+            src="https://www.qu.edu.sa/wp-content/uploads/2025/02/qu-white-logo.svg"
+            class="attachment-full size-full wp-image-72 entered lazyloaded"
+            alt='The logo of Qassim University includes text in both Arabic and English, where the name of the university appears in Arabic "Qassim University" and in English "Qassim University", and the text is topped with a distinctive design.'
+            data-lazy-src="https://www.qu.edu.sa/wp-content/uploads/2025/02/qu-white-logo.svg"
+            data-ll-status="loaded"
+            />
+            <img
+            width="50"
+            height="123"
+            src="https://www.qu.edu.sa/wp-content/uploads/2025/03/2030_vision_white.svg"
+            class="attachment-full size-full wp-image-450 entered lazyloaded"
+            alt='The Saudi Arabia 2030 Vision Assistance Logo includes the number "2030", the palm tree and crossed swords symbol, text in Arabic, and the words "Saudi Arabia" in both Arabic and English. The logo may also feature national identity symbols, such as the Saudi shemagh or the Saudi ghutra.'
+            data-lazy-src="https://www.qu.edu.sa/wp-content/uploads/2025/03/2030_vision_white.svg"
+            data-ll-status="loaded"
+            />
         </div>
-    
-
 
         <section>
-            <form action="https://sheetdb.io/api/v1/xetvzzdvhy6os" name="start-form" id="starting-form" method="post">
-                <fieldset class="border p-4 text-gray-200 font-bold">
-                    <legend class="text-gray-200 font-bold">
-                        تسجيل الدخول
-                    </legend>
+            <form
+            action="https://sheetdb.io/api/v1/xetvzzdvhy6os"
+            name="start-form"
+            id="starting-form"
+            method="post"
+            >
+            <fieldset
+                class=" p-4 font-bold  border-double hover:border-dashed border-[2px] rounded-3xl transition-all border-gray-600 shadow-2 "
+            >
+                <legend class="text-gray-500 text-center text-2xl font-bold">تسجيل الدخول</legend>
 
-                    <div class="flex flex-col items-center" >
-                        <label for="name">الإسم</label>
-                        <input type="text" 
-                                name="data[name]" 
-                                placeholder="الإسم" 
-                                class="nameInput
-                                        overflow-hidden
-                                        outline-none
-                                        text-black
-                                        pl-2
-                                        py-1
-                                        rounded
-                                        border-none
-                                ">
-                    </div>
+                <div class="flex flex-col items-center">
+                <label for="id" class="text-gray-500 ml-auto py-2">رقم الجامعة </label>
+                <input
+                    type="number"
+                    placeholder="رقم الجامعة"
+                    name="data[student_id]"
+                    class="overflow-hidden w-full outline-none text-white  pl-2 py-1 bg-transparent border  border-gray-600 rounded-[10px] placeholder:text-gray-700 placeholder:text-right"
+                />
+                </div>
 
-                    <div class="flex justify-center my-4">
-                        <button type="submit" class="
-                                                    bg-sky-300
-                                                    hover:bg-sky-100
-                                                    text-black
-                                                    font-bold
-                                                    border-none
-                                                    rounded-md
-                                                    py-2
-                                                    px-8
+                <div class="flex flex-col items-center">
+                <label for="name" class="text-gray-500 ml-auto font-bold py-2" >الإسم</label>
+                <input
+                    type="text"
+                    name="data[name]"
+                    placeholder="الإسم"
+                    class="nameInput overflow-hidden outline-none text-white bg pl-2 py-1 rounded-[10px] border-gray-600 border placeholder:text-right placeholder:text-gray-700 pr-4  bg-transparent"
+                />
+                </div>
 
-                        ">
-                            Submit
-                        </button>
-
-                    </div>
-                </fieldset>
+                <div class="flex justify-center my-4">
+                <button
+                    type="submit"
+                    class="bg-transparent  hover:bg-sky-500 border-gray-600 text-gray-500 hover:text-black tracking-wider font-bold border rounded-md py-2 px-8"
+                >
+                    Submit
+                </button>
+                </div>
+            </fieldset>
             </form>
-
         </section>
-    </main>
+        </main>
 
-    <script type="module" src="./script.js"></script>
-</body>
+        <script type="module" src="./script.js"></script>
+    </body>
 </html>

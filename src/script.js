@@ -8,10 +8,10 @@ if (window.location.href.includes('index')){
     });
     
     generalCollages.addEventListener('click', ()=>{
-        window.location.href = './src/exist.html';
+        window.location.href = './src/exit.html';
     });
 }
-
+//time declaretion..........
 const date = new Date();
 
 function sendInformation(Method){
@@ -42,6 +42,7 @@ function sendInformation(Method){
     }
     
 }
+
 
 if (window.location.href.includes('start')){
     const startingForm = document.getElementById('starting-form');
