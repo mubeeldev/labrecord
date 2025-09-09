@@ -4,11 +4,11 @@ if (window.location.href.includes('index.html')){
     const generalCollages = document.querySelector('.exit-btn');
 
     arabicSection.addEventListener('click', () => {
-        window.location.href = './src/start.html';
+        window.location.href = 'src/start.html';
     });
     
     generalCollages.addEventListener('click', ()=>{
-        window.location.href = './src/exit.html';
+        window.location.href = 'src/exit.html';
     });
 }
 //time declaretion..........
