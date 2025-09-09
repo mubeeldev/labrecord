@@ -5,10 +5,12 @@ if (window.location.href.includes('index.html')){
 
     arabicSection.addEventListener('click', () => {
         window.location.href = 'src/start.html';
+        alert('im cleaket')
     });
     
     generalCollages.addEventListener('click', ()=>{
         window.location.href = 'src/exit.html';
+        alert('im cleacket')
     });
 }
 //time declaretion..........
