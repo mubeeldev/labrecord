@@ -35,36 +35,39 @@
             name="start-form"
             id="starting-form"
             method="post"
+            
             >
             <fieldset
-                class=" p-4 font-bold  border-double hover:border-dashed border-[2px] rounded-3xl transition-all border-gray-600 shadow-2 "
+                class=" p-4 font-bold border-double hover:border-dashed border-[2px] rounded-3xl transition-all border-gray-500 shadow-2  "
             >
-                <legend class="text-gray-500 text-center text-2xl font-bold">تسجيل الدخول</legend>
+                <legend class="text-gray-400 text-center text-2xl font-bold">تسجيل الدخول</legend>
 
                 <div class="flex flex-col items-center">
-                <label for="id" class="text-gray-500 ml-auto py-2">رقم الجامعة </label>
+                <label for="id" class="text-gray-200 ml-auto py-2">رقم الجامعة </label>
                 <input
                     type="number"
                     placeholder="رقم الجامعة"
                     name="data[student_id]"
-                    class="overflow-hidden w-full outline-none text-white  pl-2 py-1 bg-transparent border  border-gray-600 rounded-[10px] placeholder:text-gray-700 placeholder:text-right"
+                    required
+                    class="overflow-hidden w-full outline-none text-white  pl-2 py-1 bg-transparent border  border-gray-500 rounded-[10px] placeholder:text-gray-500 placeholder:text-right"
                 />
                 </div>
 
                 <div class="flex flex-col items-center">
-                <label for="name" class="text-gray-500 ml-auto font-bold py-2" >الإسم</label>
+                <label for="name" class="text-gray-200 ml-auto font-bold py-2" >الإسم</label>
                 <input
                     type="text"
                     name="data[name]"
                     placeholder="الإسم"
-                    class="nameInput overflow-hidden outline-none text-white bg pl-2 py-1 rounded-[10px] border-gray-600 border placeholder:text-right placeholder:text-gray-700 pr-4  bg-transparent"
+                    required
+                    class="nameInput overflow-hidden outline-none text-white bg pl-2 py-1 rounded-[10px] border-gray-500 border placeholder:text-right placeholder:text-gray-500 pr-4  bg-transparent"
                 />
                 </div>
 
                 <div class="flex justify-center my-4">
                 <button
                     type="submit"
-                    class="bg-transparent  hover:bg-sky-500 border-gray-600 text-gray-500 hover:text-black tracking-wider font-bold border rounded-md py-2 px-8"
+                    class="bg-transparent  hover:bg-sky-500 border-gray-500 text-gray-200 hover:text-black tracking-wider font-bolder border rounded-3xl py-2 px-8"
                 >
                     Submit
                 </button>
