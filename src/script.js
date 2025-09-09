@@ -14,26 +14,38 @@ if (window.location.href.includes('index')){
 //time declaretion..........
 const date = new Date();
 
+let student = []
+
 function sendInformation(Method){
+    const startingForm = document.getElementById('starting-form');
+    const exitingForm = document.getElementById('exiting-form');
+
     if(Method === 'start') {
         const formData = new FormData(startingForm);
-        formData.append("data[date]", date.toLocaleDateString());
+        formData.append("data[date]", date.toDateString());
         formData.append("data[start_time]", date.toLocaleTimeString());
         
         fetch(startingForm.action, {
             method: 'POST',
             body: formData
+
+            
         }).then(res => res.json()).then(res =>{
             window.location.href = "response.html"
         }).catch(err => window.alert(err.message));
+        localStorage.setItem('data',JSON.stringify(formData));
     }
     else{
         const formData = new FormData(exitingForm);
         formData.append("data[date]", date.toDateString());
-        formData.append("data[exit_time]", date.toTimeString());
+        formData.append("data[exit_time]", date.toLocaleTimeString());
         
         fetch(exitingForm.action, {
-            method: 'POST',
+            method: 'PATCH',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
             body: formData
         }).then(res => res.json()).then(res =>{
             window.location.href = "response.html"
