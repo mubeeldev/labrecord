@@ -34,7 +34,6 @@ function sendInformation(Method){
         }).then(res => res.json()).then(res =>{
             window.location.href = "response.html"
         }).catch(err => window.alert(err.message));
-        localStorage.setItem('data',JSON.stringify(formData));
     }
     else{
         const formData = new FormData(exitingForm);
@@ -42,11 +41,7 @@ function sendInformation(Method){
         formData.append("data[exit_time]", date.toLocaleTimeString());
         
         fetch(exitingForm.action, {
-            method: 'PATCH',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
+            method: 'POST',
             body: formData
         }).then(res => res.json()).then(res =>{
             window.location.href = "response.html"
