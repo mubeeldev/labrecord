@@ -1,18 +1,18 @@
 
-if (window.location.href.includes('index.html')){
-    const arabicSection = document.querySelector('.start-btn');
-    const generalCollages = document.querySelector('.exit-btn');
+// if (window.location.href.includes('index.html')){
+//     const arabicSection = document.querySelector('.start-btn');
+//     const generalCollages = document.querySelector('.exit-btn');
 
-    arabicSection.addEventListener('click', () => {
-        window.location.href = 'src/start.html';
-        alert('im cleaket')
-    });
+//     arabicSection.addEventListener('click', () => {
+//         window.location.href = 'src/start.html';
+//         alert('im cleaket')
+//     });
     
-    generalCollages.addEventListener('click', ()=>{
-        window.location.href = 'src/exit.html';
-        alert('im cleacket')
-    });
-}
+//     generalCollages.addEventListener('click', ()=>{
+//         window.location.href = 'src/exit.html';
+//         alert('im cleacket')
+//     });
+// }
 //time declaretion..........
 const date = new Date();
 
