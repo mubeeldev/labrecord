@@ -1,7 +1,7 @@
 
 if (window.location.href.includes('index')){
-    const arabicSection = document.querySelector('.btn1');
-    const generalCollages = document.querySelector('.exist-btn');
+    const arabicSection = document.querySelector('.start-btn');
+    const generalCollages = document.querySelector('.exit-btn');
 
     arabicSection.addEventListener('click', () => {
         window.location.href = './src/start.html';
