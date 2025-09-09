@@ -1,5 +1,5 @@
 
-if (window.location.href.includes('index')){
+if (window.location.href.includes('index.html')){
     const arabicSection = document.querySelector('.start-btn');
     const generalCollages = document.querySelector('.exit-btn');
 
@@ -28,7 +28,6 @@ function sendInformation(Method){
         fetch(startingForm.action, {
             method: 'POST',
             body: formData
-
             
         }).then(res => res.json()).then(res =>{
             window.location.href = "response.html"
@@ -56,7 +55,7 @@ function sendInformation(Method){
 }
 
 
-if (window.location.href.includes('start')){
+if (window.location.href.includes('start.html')){
     const startingForm = document.getElementById('starting-form');
     console.log(document.forms['start-form']);
     // sending the request to the  googlesheet 
@@ -68,7 +67,7 @@ if (window.location.href.includes('start')){
     })
 }
 
-if (window.location.href.includes('exit')) {
+if (window.location.href.includes('exit.html')) {
     const exitingForm = document.getElementById('exiting-form');
     exitingForm.addEventListener('submit', e => {
         e.preventDefault();
