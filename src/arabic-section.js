@@ -1,4 +1,4 @@
-import Students from "./Studentrecord.js";
+import { addStudent, getStudents } from "./Studentrecord.js";
 
 
 const studentR = document.querySelector('.student-record');
@@ -51,9 +51,38 @@ function btns(button){
     const formSet1 = document.querySelector('.form-set1');
     const formSet2 = document.querySelector('.form-set2');
 
+    const d = new Date();
+    const nowDate = d.getDate();
+    const month = d.getMonth();
+    const year = d.getFullYear();
+    const hours = d.getHours();
+    const minute = d.getMinutes();
+    
     if(button === 'exist') {
         formSet1.style.display = 'none';
         formSet2.style.display = 'flex';
+        console.log(nowDate);
     }
-    console.log(button);
+    if(button === 'delete'){
+        console.log(button);
+        
+    }
+    if(button === 'submit1'){
+        const StudentName = document.querySelector('#nameInput').value;
+        const level = document.querySelector('#lavel').value;
+        let newStudent = 
+            {
+                date:nowDate+ "/" +month+"/" + year,
+                name:StudentName,
+                collage:'قسم التعليم اللغة الغربية لغير اهلها',
+                level:level,
+                startTime:hours +":"+minute,
+
+            }
+        addStudent(newStudent);
+    
+
+    }
+    
 }
+
