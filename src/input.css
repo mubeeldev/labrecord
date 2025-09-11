@@ -3,7 +3,7 @@
 @tailwind utilities;
 /* Add your custom styles here */
 
-main > button{
+/* main > button{
     background-color: skyblue ;
     font-weight: 700;
     padding: 2rem 4rem;
@@ -20,10 +20,4 @@ main > button{
     &:active{
         background-color: navy;
     }
-}
-@layer components{
-
-    .student-btn{
-        @apply bg-sky-400 hover:bg-sky-200 text-black py-2 px-4 rounded-md;
-    }
-}
+} */
